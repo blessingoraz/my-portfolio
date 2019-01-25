@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
-    
+    <title>Blessing Orazulume</title>
+
     <link rel="stylesheet" type="text/css" href="css/superslides.css">
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
@@ -23,9 +23,9 @@
 
     <div class="loader">
         <div class="inner">
-
         </div>
     </div>
+
 
     <div id="slides">
         <div class="overlay"></div>
@@ -40,18 +40,29 @@
             <div class="heading">
                 <p class="main">BLESSING ORAZULUME</p>
                 <p class="sub typed"></p>
+
+                <div class="header-social-link">
+                    <ul class="social-links">
+                        <li><a href="https://github.com/blessingoraz" target="_blank"><img id="github" src="./img/icons/github.png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/blessingoraz/" target="_blank"><img id="linkedIn" src="./img/icons/linkedIn.png"></a></li>
+                        <li><a href=""><img id="stackOverFlow" src="./img/icons/stackOverFlow.png"></a></li>
+                        <li><a href="https://twitter.com/blessingoraz" target="_blank"><img id="twitter" src="./img/icons/twitter.png"></a></li>
+                        <li><a href="https://medium.com/@blessingoraz" target="_blank"><img id="medium" src="./img/icons/medium.png"></a></li>
+                    </ul>
+                </div>
+
+                <div class="down-navigation">
+                    <a href="#about" class="down scroll" href="#about">
+                        <img src="./img/icons/arrow.png">
+                    </a>
+                </div>
             </div>
         </div>
-
-        <nav class="slides-navigation">
-            <a href="#" class="next"></a>
-            <a href="#" class="prev"></a>
-        </nav>
     </div>
 
     <nav id="navigation" class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">Home</a>
-       
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -60,13 +71,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link scroll" href="#about">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link scroll" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link scroll" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#blog_link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/1Y9mR1fSd0Gyc-OL46qpOGDuNhPFOEk5t/view?usp=sharing"
+                        target="_blank">Download Resume</a>
                 </li>
             </ul>
         </div>
@@ -81,19 +99,35 @@
 
                 <div class="col-md-7">
                     <h4>My name is Blessing Orazulume</h4>
-                    <p> Hi there! I’m Blessing Orazulume, a Software Developer with an interest in building for the
-                        next billion users. For 3 years,
-                        I’ve been designing, testing, and developing softwares with my skills in Javascript
-                        programming.
-                        When I’m not on the job, I love singing so you will mostly find me at Karaoke spots, dancing,
-                        drawing and going to adventurous places. </p>
-                    <p>
-                        I’m a Software Developer with an interest in building for the next billion users. For 3 years,
-                        I’ve been designing, testing, and developing softwares with my skills in Javascript
-                        programming.
 
-                        When I’m not on the job, I love singing so you will mostly find me at Karaoke spots, dancing,
+                    <p> Hi there! I’m Blessing, a <strong>Full-stack Software Developer</strong>. After getting a
+                        degree in Computer
+                        Science and also teaching Computer Studies to high school students, I decided to apply my love
+                        for technology and creative thinking towards becoming a software developer. I design and build
+                        web and mobile applications using <strong>Javascript.</strong> I currently work at <span id=""><a
+                                href="">Andela</a>.</span>
+
+                    </p>
+
+                    <p>
+                        I love coming up with innovative ideas, implementing them, and seeing my vision work. Some of
+                        the projects I’ve worked on include:
+                    </p>
+
+                    <ul>
+                        <li>Developing and implementing tools needed to automate processes for my team(a technology
+                            start-up that provides faster and better broadband) using React, Redux, MySQL and Node.</li>
+                        <li>Building a CLI tool to aid my team with continuous deployment to development, staging and
+                            production environments.</li>
+                        <li>A pizza application using stripe API for payments and Node Js on the server-side to create CRUD restful API.</li>
+                    </ul>
+
+                    <p>When I’m not on the job, I love singing so you will mostly find me at Karaoke spots, dancing,
                         drawing and going to adventurous places.
+                    </p>
+
+                    <p>If you want to get in touch, you can message me on Twitter and LinkedIn. I also love to write technical
+                        blogs, you can find them on Medium and my personal blogs.
                     </p>
                 </div>
             </div>
@@ -109,48 +143,70 @@
                 </div>
                 <div class="owl-carousel owl-theme">
                     <div class="skill">
+                        <span class="chart" data-percent="90">
+                            <span class="percent"> 90 </span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>Javascript</h4>
+                        <p>I love all things web and love doing fun things with javascript.
+                            I also love teaching the language to aspired and passionate developers.
+                        </p>
+                    </div>
+
+                    <div class="skill">
                         <span class="chart" data-percent="80">
                             <span class="percent"> 80 </span>
                             <canvas height="152" width="152"></canvas>
                         </span>
-                        <h4>Javascript</h4>
-                        <p>I use this everyday of my life</p>
+                        <h4>React</h4>
+                        <p>React is an amazing library, which I really like to work with most of the
+                            time. The reason is that it allows me to work with the virtual browser that is
+                            faster and more friendly than the real browser.
+                        </p>
                     </div>
 
                     <div class="skill">
-                        <span class="chart" data-percent="60">
-                            <span class="percent"> 60 </span>
+                        <span class="chart" data-percent="80">
+                            <span class="percent"> 80 </span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>React Native</h4>
+                        <p>I have experience with using most of the APIs in the react native frame work,
+                            and also building applications on both IOS and Android platforms.
+                        </p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="80">
+                            <span class="percent"> 80 </span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>Node Js</h4>
+                        <p>I use Node.js for building my server side application, alongside Express framework.
+                            I have a good knowledge in building APIs taking into account securities and testing.
+                        </p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="80">
+                            <span class="percent"> 90 </span>
                             <canvas height="152" width="152"></canvas>
                         </span>
                         <h4>HTML</h4>
-                        <p>I use this everyday of my life</p>
+                        <p>I love Web UI design with Html and styling with CSS. I have built web applications with
+                            minimal use of third party framework.
+                        </p>
                     </div>
 
                     <div class="skill">
                         <span class="chart" data-percent="80">
-                            <span class="percent"> 80 </span>
+                            <span class="percent"> 90 </span>
                             <canvas height="152" width="152"></canvas>
                         </span>
                         <h4>CSS</h4>
-                        <p>I use this everyday of my life</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="20">
-                            <span class="percent"> 20 </span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>Node</h4>
-                        <p>I use this everyday of my life</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="10">
-                            <span class="percent"> 10 </span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>Javascript</h4>
-                        <p>I use this everyday of my life</p>
+                        <p>I write a lot of JavaScript and CSS. I’m really, really good at those two things.
+                            If you need any help, beep me :)
+                        </p>
                     </div>
                 </div>
             </div>
@@ -164,10 +220,10 @@
                     <div class="squareItem">
                         <div class="squareInnerContainer">
                             <div class="squareIcon">
-                                <i class="fa fa-clock"></i>
+                                <i class="fa fa-building"></i>
                             </div>
                             <div class="squareContent">
-                                <h2 class="counter">204</h2>
+                                <h2 class="counter">6</h2>
                                 <h3>Clients</h3>
                             </div>
                         </div>
@@ -179,6 +235,20 @@
                         <div class="squareInnerContainer">
                             <div class="squareIcon">
                                 <i class="fa fa-clock"></i>
+                            </div>
+                            <div class="squareContent">
+                                <h2 class="counter">9</h2>
+                                <h3>Coding hours per day</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="squareItem">
+                        <div class="squareInnerContainer">
+                            <div class="squareIcon">
+                                <i class="fa fa-calendar-alt"></i>
                             </div>
                             <div class="squareContent">
                                 <h2 class="counter">4</h2>
@@ -192,21 +262,7 @@
                     <div class="squareItem">
                         <div class="squareInnerContainer">
                             <div class="squareIcon">
-                                <i class="fa fa-clock"></i>
-                            </div>
-                            <div class="squareContent">
-                                <h2 class="counter">4</h2>
-                                <h3>Clients</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="squareItem">
-                        <div class="squareInnerContainer">
-                            <div class="squareIcon">
-                                <i class="fa fa-clock"></i>
+                                <i class="fa fa-calendar-alt"></i>
                             </div>
                             <div class="squareContent">
                                 <h2 class="counter">4</h2>
@@ -238,7 +294,7 @@
                         <li><a href="#" data-filter="*" class="current">ALL</a></li>
                         <li><a href="#" data-filter=".apps">APPS</a></li>
                         <li><a href="#" data-filter=".me">ME</a></li>
-                        <li><a href="#" data-filter=".websites">WEBSITES</a></li>
+                        <li><a href="#" data-filter=".vr">VR</a></li>
                     </ul>
                 </div>
 
@@ -298,16 +354,16 @@
                             </div>
                         </li>
 
-                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <li onclick="" class="vr col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
-                                <img src="./img/portfolio/thumbnails/dog-square.jpg" alt="">
+                                <img src="./img/portfolio/thumbnails/vr1-small.png" alt="">
 
                                 <div class="icons">
-                                    <a href="img/portfolio/dog.jpg" title="View image" class="openButton" data-fancybox
+                                    <a href="img/portfolio/vr1-big.png" title="View image" class="openButton" data-fancybox
                                         data-caption="This is something nice">
                                         <i class="fa fa-search"></i>
                                     </a>
-                                    <a href="" target="_blank" class="projectLink">
+                                    <a href="https://youtu.be/gmcz2Uy91OA" target="_blank" class="projectLink">
                                         <i class="fa fa-link"></i>
                                     </a>
                                 </div>
@@ -316,7 +372,7 @@
                             </div>
                         </li>
 
-                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <li onclick="" class="vr col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
                                 <img src="./img/portfolio/thumbnails/dog-square.jpg" alt="">
 
@@ -354,22 +410,22 @@
 
                         <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
-                                <img src="./img/portfolio/thumbnails/dog-square.jpg" alt="">
+                                <img src="./img/portfolio/thumbnails/vr2-small.jpg" alt="">
 
                                 <div class="icons">
-                                    <a href="img/portfolio/dog.jpg" title="View image" class="openButton" data-fancybox
+                                    <a href="img/portfolio/vr2-big.jpg" title="View image" class="openButton" data-fancybox
                                         data-caption="This is something nice">
                                         <i class="fa fa-search"></i>
                                     </a>
-                                    <a href="" target="_blank" class="projectLink">
+                                    <!-- <a href="" target="_blank" class="projectLink">
                                         <i class="fa fa-link"></i>
-                                    </a>
+                                    </a> -->
                                 </div>
 
                                 <div class="imageOverlay"></div>
                             </div>
                         </li>
-                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <li onclick="" class="vr col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
                                 <img src="./img/portfolio/thumbnails/dog-square.jpg" alt="">
 
@@ -394,6 +450,14 @@
 
     <div class="copyrightsection">
         <div class="col-md-12 text-center">
+            <!-- Social Links -->
+            <ul class="social-links">
+                <li><a href="https://github.com/blessingoraz" target="_blank"><img id="github" src="./img/icons/github.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/blessingoraz/" target="_blank"><img id="linkedIn" src="./img/icons/linkedIn.png"></a></li>
+                <li><a href=""><img id="stackOverFlow" src="./img/icons/stackOverFlow.png"></a></li>
+                <li><a href="https://twitter.com/blessingoraz" target="_blank"><img id="twitter" src="./img/icons/twitter.png"></a></li>
+                <li><a href="https://medium.com/@blessingoraz" target="_blank"><img id="medium" src="./img/icons/medium.png"></a></li>
+            </ul>
             <p>&copy; Copyright Blessing Orazulume 2019</p>
         </div>
     </div>
