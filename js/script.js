@@ -21,7 +21,7 @@ $(document).ready(function() {
     });
 
     var types = new Typed(".typed", {
-        strings: ["Software Developer", "Full-stack development", "UI/UX Enthusiast"],
+        strings: ["I'm Blessing :)", "I'm a Full-stack Software Developer, based in Lagos, Nigeria ", "I love working on challenging projects", "I love working with great people!"],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
@@ -30,6 +30,10 @@ $(document).ready(function() {
 
     $('.owl-carousel').owlCarousel({
         loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        stagePadding:30,
+        smartSpeed:650,
         items: 4,
         responsive:{
             0:{
@@ -96,7 +100,8 @@ $(document).ready(function() {
         return false;
     });
 
-    $('#navigation li a').click(function(e) {
+    // Navigating between a tags
+    $('.scroll').click(function(e) {
         e.preventDefault();
 
         var targetElement = $(this).attr("href");
@@ -104,6 +109,7 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: targetPosition - 50 }, 'slow');
     });
 
+    // Sticky navigation 
     const nav = $("#navigation");
     const navTop = nav.offset().top;
 
